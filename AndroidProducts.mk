@@ -15,4 +15,7 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_poplar_dsds.mk
+    $(LOCAL_DIR)/hentai_poplar_dsds.mk
+COMMON_LUNCH_CHOICES += \
+    hentai_poplar-userdebug \
+    hentai_poplar-eng 
