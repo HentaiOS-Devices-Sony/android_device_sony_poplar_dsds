@@ -65,3 +65,6 @@ BOARD_VNDK_VERSION := current
 ### SYSTEM PROPS
 # Add device-specific ones
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
+
+## un-comment below only if build error give "$(PATH_OVERRIDE_SOONG) is not defined"
+#include vendor/aosp/config/BoardConfig.mk
