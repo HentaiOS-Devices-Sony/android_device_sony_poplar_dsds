@@ -32,6 +32,9 @@ How to build Hentai OS
             <project name="cryptomilk/android_device_sony_common-treble" path="device/sony/common-treble" remote="github" revision="lineage-17.1" />
             <project name="cryptomilk/android_device_sony_yoshino" path="device/sony/yoshino" remote="github" revision="lineage-17.1" />
             <project name="HentaiOS-Devices-Sony/android_device_sony_poplar_dsds" path="device/sony/poplar_dsds" remote="github" revision="queenslave" />
+            
+            <!-- PixelExperience -->
+              <project path="device/qcom/sepolicy-legacy-um" name="PixelExperience/device_qcom_sepolicy-legacy-um" remote="github" revision="ten" />
 
             <!-- Pinned blobs for poplar_dsds -->
             <project name="derfelot/android_vendor_sony_poplar_dsds" path="vendor/sony/poplar_dsds" remote="github" revision="lineage-17.1" />
