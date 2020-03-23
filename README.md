@@ -57,5 +57,17 @@ How to build Hentai OS
 * Build LineageOS
 
         make -j&(nproc)
+        
+if encounter error 
+error: external/tinycompress/Android.bp:1:1: "libtinycompress" depends on undefined module
+"generated_kernel_headers"
+Module "libtinycompress" is defined in namespace "." which can read these 1 namespaces: ["."]
+Module "generated_kernel_headers" can be found in these namespaces: ["vendor/hentai/build/soong/generator"]
+13:39:32 soong bootstrap failed with: exit status 1
+
+revert commit 
+https://github.com/HentaiOS/platform_vendor_hentai/commit/723a026a067b9dd1256044819f504c511446c27f
+and
+https://github.com/HentaiOS/platform_build/commit/283f83950c618989b3b55d2849c067f3fb9f9865#
 
 thanks to @shank03 for the help and reference: https://github.com/shank03/android_device_sony_lilac
