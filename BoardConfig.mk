@@ -56,9 +56,6 @@ BOARD_MODEM_CUSTOMIZATIONS := true
 ### IMS
 BOARD_IMS_CAMERA := true
 
-### HIDL
-DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml
-
 ### VNDK
 BOARD_VNDK_VERSION := current
 
