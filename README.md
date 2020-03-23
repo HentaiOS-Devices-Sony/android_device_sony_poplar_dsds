@@ -54,3 +54,5 @@ How to build Hentai OS
 * Build LineageOS
 
         make -j&(nproc)
+
+thanks to @shank03 for the help and reference: https://github.com/shank03/android_device_sony_lilac
