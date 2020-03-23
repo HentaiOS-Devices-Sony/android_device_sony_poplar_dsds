@@ -17,5 +17,5 @@
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/hentai_poplar_dsds.mk
 COMMON_LUNCH_CHOICES += \
-    hentai_poplar-userdebug \
-    hentai_poplar-eng 
+    hentai_poplar_dsds-userdebug \
+    hentai_poplar_dsds-eng 
