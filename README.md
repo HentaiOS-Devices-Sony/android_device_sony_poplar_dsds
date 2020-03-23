@@ -4,23 +4,26 @@ Device configuration for Sony Xperia XZ1 dual (poplar_dsds)
 Description
 -----------
 
-This repository is for LineageOS 17.1 on Sony Xperia XZ1 dual (poplar_dsds).
+This repository is for Hentai OS on Sony Xperia XZ1 dual (poplar_dsds).
 
-How to build LineageOS
+How to build Hentai OS
 ----------------------
 
 * Make a workspace:
 
-        mkdir -p ~/lineageos
-        cd ~/lineageos
+        mkdir -p ~/hentai
+        cd ~/
 
 * Initialize the repo:
 
-        repo init -u git://github.com/LineageOS/android.git -b lineage-17.1
+        repo init -u https://github.com/HentaiOS/platform_manifest -b queenslave
 
 * Create a local manifest:
 
-        vim .repo/local_manifests/roomservice.xml
+        cd .repo
+        mkdir local_manifests
+        cd local_manifests
+        touch roomservice.xml
 
         <?xml version="1.0" encoding="UTF-8"?>
         <manifest>
@@ -36,7 +39,7 @@ How to build LineageOS
 
 * Sync the repo:
 
-        repo sync
+        repo sync -c -j6 --no-clone-bundle -no-tags
 
 * Extract vendor blobs
 
@@ -46,8 +49,8 @@ How to build LineageOS
 * Setup the environment
 
         source build/envsetup.sh
-        lunch lineage_poplar_dsds-userdebug
+        lunch hentai_poplar_dsds-userdebug
 
 * Build LineageOS
 
-        make -j7 bacon
+        make -j&(nproc)
