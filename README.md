@@ -58,6 +58,9 @@ How to build Hentai OS
 
         make -j&(nproc)
         
+        
+        
+        
 if encounter error 
 error: external/tinycompress/Android.bp:1:1: "libtinycompress" depends on undefined module
 "generated_kernel_headers"
