@@ -30,7 +30,7 @@ How to build Hentai OS
             <!-- SONY -->
             <project name="cryptomilk/android_kernel_sony_msm8998" path="kernel/sony/msm8998" remote="github" revision="lineage-17.1" />
             <project name="cryptomilk/android_device_sony_common-treble" path="device/sony/common-treble" remote="github" revision="lineage-17.1" />
-            <project name="cryptomilk/android_device_sony_yoshino" path="device/sony/yoshino" remote="github" revision="lineage-17.1" />
+            <project name="HentaiOS-Devices-Sony/android_device_sony_yoshino" path="device/sony/yoshino" remote="github" revision="queenslave" />
             <project name="HentaiOS-Devices-Sony/android_device_sony_poplar_dsds" path="device/sony/poplar_dsds" remote="github" revision="queenslave" />
             
             <!-- PixelExperience -->
