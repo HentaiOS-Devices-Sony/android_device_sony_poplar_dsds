@@ -15,18 +15,17 @@ TARGET_SCREEN_WIDTH := 1080
 # vendor/lineage/config/common.mk
 TARGET_BOOTANIMATION_HALF_RES := true
 
-#GAPPS
-WITH_GAPPS := true
+### GApps
 TARGET_GAPPS_ARCH := arm64
 TARGET_INCLUDE_STOCK_ARCORE := true
-TARGET_SUPPORTS_PIXEL_WALLPAPER := true
 TARGET_SUPPORTS_GOOGLE_RECORDER := true
+IS_PHONE := true
 
-### LINEAGE
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+### HENTAI
+$(call inherit-product, vendor/hentai/config/common_telephony.mk)
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_NAME := lineage_poplar_dsds
+PRODUCT_NAME := hentai_poplar_dsds
 PRODUCT_DEVICE := poplar_dsds
 PRODUCT_BRAND := Sony
 PRODUCT_MODEL := G8342
